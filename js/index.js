@@ -25,9 +25,10 @@ function cargarPresentacion(mostrarCantidad) {
         card.className = "card";
         card.style.width = "12rem";
         card.style.margin = "1rem";
+        let imagenIndex = pelicula.imagen.replace("../", "./");
 
         card.innerHTML = `
-            <img src="${pelicula.imagen}" class="card-img-top" alt="${pelicula.nombre}">
+            <img src="${imagenIndex}" class="card-img-top" alt="${pelicula.nombre}">
             <div class="card-body">
                 <h5 class="card-title">${pelicula.nombre}</h5>
                 <p class="card-text"><small class="text-muted">Año: ${pelicula.anioEstreno}</small></p>
