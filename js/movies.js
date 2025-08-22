@@ -1,4 +1,10 @@
-const URL = "../js/movies.json";
+let URL = "";
+
+if (window.location.pathname.includes("catalogo")) {
+    URL = "../js/movies.json";
+} else {
+    URL = "./js/movies.json";
+}
 
 async function leerPeliculas(){
     try {
