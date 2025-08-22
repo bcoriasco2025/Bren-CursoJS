@@ -1,4 +1,4 @@
-const URL = "./js/movies.json";
+const URL = "../js/movies.json";
 
 async function leerPeliculas(){
     try {
